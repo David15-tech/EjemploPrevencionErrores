@@ -1,0 +1,189 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background: url('../imagenes/backg1.jpg') center/cover no-repeat fixed;/* Cambia 'tu-imagen-de-fondo.jpg' con la ruta de tu imagen */
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color:#1c1d32;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px; /* Aumentado el tamaño  fuente */
+    margin-left: 40px;
+}
+
+.navbar {
+    margin-top: 20px;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.navbar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-item {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: #007bff;
+}
+
+#contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#contenedorcentrado {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.8); /* Fondo negro semi-transparente */
+}
+
+#login {
+    flex: 1;
+    padding: 20px;
+}
+
+
+#loginform {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #706464;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color:#021a39;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0073f0;
+}
+
+#mensaje {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: none;
+    font-weight: bold;
+}
+
+.exito {
+    color: #155724;
+    background-color: #d4edda;
+}
+
+.error {
+    color: #721c24;
+    background-color: #f8d7da;
+}
+
+.animate {
+    animation: entrada 1s ease-out;
+}
+
+@keyframes entrada {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#derecho {
+    flex: 1;
+    background-color: transparent; /* Fondo transparente */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; /* Color del texto en el panel derecho */
+}
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pie-form {
+    text-align: center;
+}
+
+.pie-form a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 5px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.pie-form a:hover {
+    color: #0056b3;
+}
+
+.pie-form hr {
+    border: 0.5px solid #ced4da;
+    width: 80%;
+    margin: 15px auto;
+}
+
+
+
+
+
+
+
+
